@@ -15,7 +15,6 @@ require (
 	github.com/xtls/xray-core v1.260327.0
 	golang.org/x/crypto v0.49.0
 	golang.org/x/sys v0.42.0
-	google.golang.org/grpc v1.81.0
 	google.golang.org/protobuf v1.36.11
 )
 
@@ -169,12 +168,16 @@ require (
 	golang.zx2c4.com/wireguard v0.0.0-20250521234502-f333402bd9cb // indirect
 	golang.zx2c4.com/wireguard/windows v0.5.3 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20260226221140-a57be14db171 // indirect
+	google.golang.org/grpc v1.81.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gvisor.dev/gvisor v0.0.0-20260122175437-89a5d21be8f0 // indirect
 	lukechampine.com/blake3 v1.4.1 // indirect
 )
 
-replace github.com/sagernet/sing-box => github.com/Throneproj/sing-box v1.11.16-0.20260516014442-9d6d801badca
+replace (
+	github.com/sagernet/sing-box => github.com/Throneproj/sing-box v1.11.16-0.20260516014442-9d6d801badca
+	github.com/sagernet/sing-box v1.13.12 => github.com/Fido6/sing-box-throne v1.11.16-0.20260524055819-6fc86186f3f6
+)
 
 replace github.com/sagernet/cronet-go => github.com/parhelia512/cronet-go v0.0.0-20260515230114-6df543aa5cbc
 
